@@ -73,4 +73,4 @@ tidy_data <- melt(all, id=c("subjectcode", "actname"), measure.vars=meanstdname)
               dcast(data = allmelt, subjectcode + actname ~ variable, mean)
 
 # output file
-write.table(tidy_data, "tidy_data.txt", row.names = FALSE)
+write.table(tidy_data, "tidy_data.txt", row.name = FALSE)
